@@ -1,0 +1,29 @@
+Monte Carlo Validation Summary
+============================
+
+Moving Average Crossover Strategy:
+  Mean Return: -0.0081
+  Std Dev Return: 0.0039
+  95% CI: [-0.0130, -0.0004]
+  Mean Max Drawdown: -0.9945
+  Mean Sharpe Ratio: -0.0001
+  Mean Number of Trades: 223.0
+
+RSI Strategy:
+  Mean Return: 0.0000
+  Std Dev Return: 0.0000
+  95% CI: [0.0000, 0.0000]
+  Mean Max Drawdown: 0.0000
+  Mean Sharpe Ratio: 0.0000
+  Mean Number of Trades: 0.0
+
+Bollinger Bands Strategy:
+  Mean Return: 0.0000
+  Std Dev Return: 0.0000
+  95% CI: [0.0000, 0.0000]
+  Mean Max Drawdown: 0.0000
+  Mean Sharpe Ratio: 0.0000
+  Mean Number of Trades: 0.0
+
+Parameter Sensitivity Analysis:
+  See monte_carlo_results/MovingAverageCrossover_parameter_sensitivity.csv for details

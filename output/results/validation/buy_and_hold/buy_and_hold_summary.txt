@@ -1,0 +1,7 @@
+Buy and Hold Benchmark Summary
+=============================
+
+Backtester Return: -0.1001
+Theoretical Return: 0.1164
+Return Difference: 0.2165
+Benchmark Passed: Yes

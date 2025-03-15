@@ -1,0 +1,47 @@
+# Sample configuration file for the Modular Backtesting System
+
+# Data source configuration
+data_source:
+  type: "CSVDataSource"
+  params:
+    file_path: "data/btc_daily.csv"
+    date_column: "timestamp"
+    date_format: "%Y-%m-%d %H:%M:%S"
+
+# Strategy configuration
+strategy:
+  type: "MovingAverageCrossover"
+  params:
+    short_window: 20
+    long_window: 50
+    price_column: "close"
+
+# Portfolio manager configuration
+portfolio_manager:
+  type: "BasicPortfolioManager"
+  params:
+    initial_capital: 10000
+    position_sizer:
+      type: "PercentageSizer"
+      params:
+        percentage: 0.1
+
+# Backtest configuration
+backtest:
+  transaction_costs: 0.001
+  slippage: 0.0005
+  start_date: "2020-01-01"
+  end_date: "2021-01-01"
+  symbol: "BTC-USD"
+
+# Events configuration
+events:
+  use_redis: false
+  redis_url: "redis://localhost:6379/0"
+
+# Output configuration
+output:
+  directory: "results"
+  save_plots: true
+  show_plots: false
+  save_results: true 

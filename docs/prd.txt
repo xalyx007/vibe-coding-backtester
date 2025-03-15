@@ -1,0 +1,133 @@
+Product Requirements Document (PRD): Modular Backtesting System for Trading Strategies (Revised)
+1. Introduction
+1.1 Purpose
+This document outlines the requirements for a backend repository designed to backtest trading strategies, including simple heuristics, machine learning models, and combinations thereof. The architecture prioritizes modularity and decoupling to ensure flexibility and ease of iteration. A separate frontend iteration in React will interact with this backend via events.
+1.2 Scope
+The system will support backtesting of trading strategies using historical market data, primarily focused on cryptocurrencies but extensible to other asset classes. It will feature decoupled modules for data inputs, strategy generation, portfolio management, and backtesting, with data sourced from spreadsheets, CSVs, or exchange APIs. The frontend will be developed separately and deployed independently.
+
+2. Functional Requirements
+2.1 Inputs Module
+Purpose: Gather and preprocess data, sending it to the strategy module.
+Data Requirements:
+Minimal data is a candlestick with fields: open, close, high (max), low (min), volume, and timestamp.
+Optional additional data: order book snapshots, technical indicators, or external signals.
+Time Granularity: Support multiple timeframes (e.g., 1 minute, 5 minutes, 15 minutes, 1 hour, 4 hours, daily).
+Data Sources:
+Upload historical data via spreadsheets (e.g., Excel) or CSV files.
+Fetch data dynamically by calling exchange APIs (e.g., Binance, Coinbase).
+Output: Send processed data as standardized objects (e.g., Pandas DataFrames or custom candlestick objects) to the strategy module.
+2.2 Strategy Module
+Purpose: Generate buy/sell signals based on inputs received, fully decoupled from backtesting logic.
+Functionality:
+Receive candlestick data (and optional additional inputs) from the inputs module.
+Output signals: BUY, SELL, or HOLD with associated metadata (e.g., quantity, timestamp).
+Support simple heuristics (e.g., moving average crossovers) via Python code or configuration files.
+Support machine learning models (e.g., via Scikit-learn, TensorFlow) with signal generation logic.
+Interface: Define a standard interface (e.g., generate_signals(data) method) to ensure compatibility with other modules.
+Decoupling: No direct interaction with backtesting or portfolio management; only processes data and emits signals.
+2.3 Backtesting Module
+Purpose: Simulate trading based on signals from the strategy module and portfolio updates from the portfolio manager.
+Functionality:
+Receive buy/sell signals from the strategy module.
+Simulate trade execution considering transaction costs (e.g., fees, slippage).
+Request position updates from the portfolio manager module.
+Support multiple time granularities aligned with input data (e.g., minute, hourly, daily).
+Output: Generate trade history and performance data for evaluation.
+2.4 Portfolio Manager Module
+Purpose: Manage positions and trades, decoupled from strategy and backtesting logic.
+Functionality:
+Track cash balance, asset holdings, and open positions.
+Process signals from the backtesting module to execute trades (e.g., update positions based on BUY/SELL).
+Apply position sizing rules (e.g., fixed amount, percentage of capital).
+Handle trade constraints (e.g., minimum trade size, available capital).
+Interface: Define a standard interface (e.g., update_position(signal) method) for interaction with the backtesting module.
+2.5 Performance Evaluation
+Purpose: Analyze backtesting results.
+Functionality:
+Compute metrics: total return, annualized return, Sharpe ratio, maximum drawdown, win rate, profit factor.
+Generate visualizations: equity curves, trade history plots, drawdown charts.
+Output: Results available as JSON or similar format for frontend consumption.
+2.6 Strategy Combination
+Purpose: Enable combining multiple strategies.
+Functionality:
+Aggregate signals from multiple strategy instances (e.g., voting, weighting).
+Support portfolio-level allocation across strategies.
+Allow meta-strategies to dynamically select or adjust sub-strategies based on conditions.
+2.7 Event-Based Communication
+Purpose: Facilitate interaction with a separate frontend.
+Functionality:
+Emit events (e.g., via a message queue or WebSocket) for:
+New data loaded.
+Signals generated.
+Backtest completed with results.
+Accept events from the frontend to trigger actions (e.g., start backtest, adjust parameters).
+2.8 Configuration and Parameterization
+Purpose: Allow flexible setup of modules.
+Functionality:
+Configure via JSON/YAML files or CLI arguments.
+Support parameter sweeps for strategies (e.g., moving average periods, ML hyperparameters).
+2.9 Logging and Reporting
+Purpose: Track and report backtest details.
+Functionality:
+Log strategy details, parameters, data range, and results.
+Output reports in JSON or CSV for backend use, with frontend handling presentation.
+
+3. Non-Functional Requirements
+3.1 Modularity
+Modules (inputs, strategy, backtesting, portfolio manager) shall be decoupled, communicating via well-defined interfaces or events.
+Components shall be interchangeable (e.g., swap data sources or strategies) without altering core logic.
+3.2 Scalability
+Handle large datasets efficiently (e.g., years of minute-level data).
+Support parallel processing for backtests or strategy evaluations.
+3.3 Performance
+Optimize for speed using vectorized operations (e.g., Pandas, NumPy).
+Minimize latency in signal generation and trade simulation.
+3.4 Usability
+Provide clear APIs and documentation for developers integrating with the system.
+Ensure easy setup with example configurations.
+3.5 Extensibility
+Allow custom data sources, strategies, or portfolio rules with minimal changes.
+
+4. Technical Requirements
+Programming Language: Python 3.x
+Core Libraries:
+NumPy, Pandas for data handling
+Matplotlib or Plotly for visualization (backend-generated plots)
+Scikit-learn, TensorFlow, or PyTorch for ML (optional)
+Data Storage: CSV, HDF5, or SQL databases
+Exchange Integration: CCXT library for API calls
+Event System: Use a lightweight message broker (e.g., Redis, RabbitMQ) or WebSocket for frontend-backend interaction
+
+5. User Stories
+Trader: "I want to upload a CSV of Bitcoin hourly data and test a moving average strategy."
+Data Scientist: "I want to send 5-minute candlestick data to a neural network and get buy/sell signals for backtesting."
+Portfolio Manager: "I want to combine signals from two strategies and see how my portfolio performs over time."
+
+6. Success Criteria
+Accurate signal generation and trade simulation across modules.
+Seamless integration of diverse data sources and time granularities.
+Reliable event-based communication with a separate frontend.
+
+7. Constraints and Assumptions
+Constraints: Requires historical data availability and sufficient compute resources.
+Assumptions: Users have Python knowledge; frontend development occurs in a separate iteration.
+
+8. Risks and Mitigations
+Risk: Misalignment between modules due to decoupling.
+Mitigation: Define strict interfaces and test inter-module communication.
+Risk: Performance bottlenecks with high-frequency data.
+Mitigation: Use efficient data structures and parallelization.
+Risk: Complexity in event-based frontend integration.
+Mitigation: Start with a simple event system and iterate based on frontend needs.
+
+9. Development Phases
+Phase 1 (Backend): Build and test inputs, strategy, backtesting, and portfolio modules with event emission.
+Phase 2 (Frontend): Develop React frontend separately, connecting via events (not covered here).
+
+10. Documentation and Support
+Documentation:
+Setup guide
+API references for each module
+Examples (e.g., moving average strategy, ML model integration)
+Support: Provide sample scripts and troubleshooting tips.
+

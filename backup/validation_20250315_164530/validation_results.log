@@ -1,0 +1,120 @@
+2025-03-15 16:14:36,520 - backtester_validation - INFO - Starting backtester validation
+2025-03-15 16:14:36,525 - backtester_validation - INFO - Running buy and hold validation test
+2025-03-15 16:14:36,533 - backtester_validation - INFO - Expected return: -0.3683
+2025-03-15 16:14:36,533 - backtester_validation - INFO - Actual return: -0.3701
+2025-03-15 16:14:36,533 - backtester_validation - INFO - Return error: 0.0019
+2025-03-15 16:14:36,702 - backtester_validation - INFO - Running perfect foresight validation test
+2025-03-15 16:14:36,709 - backtester_validation - INFO - Perfect foresight return: 0.8857
+2025-03-15 16:14:36,709 - backtester_validation - INFO - Buy and hold return: -0.3688
+2025-03-15 16:14:36,762 - backtester_validation - INFO - Running transaction costs validation test
+2025-03-15 16:14:36,774 - backtester_validation - INFO - Return with costs: -0.9334
+2025-03-15 16:14:36,774 - backtester_validation - INFO - Return without costs: -0.1496
+2025-03-15 16:14:36,774 - backtester_validation - INFO - Return difference: 0.7838
+2025-03-15 16:14:36,774 - backtester_validation - INFO - Number of trades: 252
+2025-03-15 16:14:36,831 - backtester_validation - INFO - Running slippage validation test
+2025-03-15 16:14:36,845 - backtester_validation - INFO - Return with slippage: -0.0703
+2025-03-15 16:14:36,845 - backtester_validation - INFO - Return without slippage: -0.0421
+2025-03-15 16:14:36,845 - backtester_validation - INFO - Return difference: 0.0282
+2025-03-15 16:14:36,902 - backtester_validation - INFO - Running look-ahead bias validation test
+2025-03-15 16:14:36,915 - backtester_validation - INFO - Normal strategy return: -0.0435
+2025-03-15 16:14:36,915 - backtester_validation - INFO - Future peeking strategy return: 0.1145
+2025-03-15 16:14:36,976 - backtester_validation - INFO - Running strategy consistency validation test
+2025-03-15 16:14:37,008 - backtester_validation - INFO - Returns: [-0.043536379089582855, -0.043536379089582855, -0.043536379089582855, -0.043536379089582855, -0.043536379089582855]
+2025-03-15 16:14:37,008 - backtester_validation - INFO - Return range: 0.00000000
+2025-03-15 16:14:37,008 - backtester_validation - INFO - Running buy and hold validation test
+2025-03-15 16:14:37,013 - backtester_validation - INFO - Expected return: -0.0068
+2025-03-15 16:14:37,013 - backtester_validation - INFO - Actual return: -0.0083
+2025-03-15 16:14:37,013 - backtester_validation - INFO - Return error: 0.0015
+2025-03-15 16:14:37,071 - backtester_validation - INFO - Running perfect foresight validation test
+2025-03-15 16:14:37,077 - backtester_validation - INFO - Perfect foresight return: 1.2184
+2025-03-15 16:14:37,077 - backtester_validation - INFO - Buy and hold return: -0.0068
+2025-03-15 16:14:37,132 - backtester_validation - INFO - Running buy and hold validation test
+2025-03-15 16:14:37,139 - backtester_validation - INFO - Expected return: -0.1538
+2025-03-15 16:14:37,139 - backtester_validation - INFO - Actual return: -0.1554
+2025-03-15 16:14:37,139 - backtester_validation - INFO - Return error: 0.0017
+2025-03-15 16:14:37,193 - backtester_validation - INFO - Running perfect foresight validation test
+2025-03-15 16:14:37,199 - backtester_validation - INFO - Perfect foresight return: 1.0081
+2025-03-15 16:14:37,199 - backtester_validation - INFO - Buy and hold return: -0.1540
+2025-03-15 16:14:37,253 - backtester_validation - INFO - Running buy and hold validation test
+2025-03-15 16:14:37,258 - backtester_validation - INFO - Expected return: 0.0012
+2025-03-15 16:14:37,258 - backtester_validation - INFO - Actual return: -0.0003
+2025-03-15 16:14:37,258 - backtester_validation - INFO - Return error: 0.0015
+2025-03-15 16:14:37,317 - backtester_validation - INFO - Running perfect foresight validation test
+2025-03-15 16:14:37,324 - backtester_validation - INFO - Perfect foresight return: 1.2330
+2025-03-15 16:14:37,324 - backtester_validation - INFO - Buy and hold return: 0.0012
+2025-03-15 16:14:37,378 - backtester_validation - INFO - Running edge case validation tests
+2025-03-15 16:14:37,387 - backtester_validation - INFO - Validation complete: 13/13 tests passed
+2025-03-15 16:14:37,387 - backtester_validation - INFO - Test: buy_and_hold, Passed: True
+2025-03-15 16:14:37,387 - backtester_validation - INFO - Test: perfect_foresight, Passed: True
+2025-03-15 16:14:37,387 - backtester_validation - INFO - Test: transaction_costs, Passed: True
+2025-03-15 16:14:37,387 - backtester_validation - INFO - Test: slippage, Passed: True
+2025-03-15 16:14:37,387 - backtester_validation - INFO - Test: look_ahead_bias, Passed: True
+2025-03-15 16:14:37,387 - backtester_validation - INFO - Test: strategy_consistency, Passed: True
+2025-03-15 16:14:37,388 - backtester_validation - INFO - Test: buy_and_hold, Passed: True
+2025-03-15 16:14:37,388 - backtester_validation - INFO - Test: perfect_foresight, Passed: True
+2025-03-15 16:14:37,388 - backtester_validation - INFO - Test: buy_and_hold, Passed: True
+2025-03-15 16:14:37,388 - backtester_validation - INFO - Test: perfect_foresight, Passed: True
+2025-03-15 16:14:37,388 - backtester_validation - INFO - Test: buy_and_hold, Passed: True
+2025-03-15 16:14:37,388 - backtester_validation - INFO - Test: perfect_foresight, Passed: True
+2025-03-15 16:14:37,388 - backtester_validation - INFO - Test: edge_cases, Passed: True
+2025-03-15 16:14:37,388 - backtester_validation - INFO - Validation report saved to validation_results/summary.txt
+2025-03-15 16:15:50,956 - backtester_validation - INFO - Starting backtester validation
+2025-03-15 16:15:50,963 - backtester_validation - INFO - Running buy and hold validation test
+2025-03-15 16:15:50,971 - backtester_validation - INFO - Expected return: 0.0284
+2025-03-15 16:15:50,971 - backtester_validation - INFO - Actual return: 0.0270
+2025-03-15 16:15:50,971 - backtester_validation - INFO - Return error: 0.0015
+2025-03-15 16:15:51,129 - backtester_validation - INFO - Running perfect foresight validation test
+2025-03-15 16:15:51,136 - backtester_validation - INFO - Perfect foresight return: 1.2415
+2025-03-15 16:15:51,136 - backtester_validation - INFO - Buy and hold return: 0.0285
+2025-03-15 16:15:51,191 - backtester_validation - INFO - Running transaction costs validation test
+2025-03-15 16:15:51,203 - backtester_validation - INFO - Return with costs: -0.9205
+2025-03-15 16:15:51,204 - backtester_validation - INFO - Return without costs: 0.0134
+2025-03-15 16:15:51,204 - backtester_validation - INFO - Return difference: 0.9339
+2025-03-15 16:15:51,204 - backtester_validation - INFO - Number of trades: 252
+2025-03-15 16:15:51,261 - backtester_validation - INFO - Running slippage validation test
+2025-03-15 16:15:51,275 - backtester_validation - INFO - Return with slippage: -0.9443
+2025-03-15 16:15:51,275 - backtester_validation - INFO - Return without slippage: -0.9403
+2025-03-15 16:15:51,275 - backtester_validation - INFO - Return difference: 0.0039
+2025-03-15 16:15:51,334 - backtester_validation - INFO - Running look-ahead bias validation test
+2025-03-15 16:15:51,348 - backtester_validation - INFO - Normal strategy return: -0.9405
+2025-03-15 16:15:51,348 - backtester_validation - INFO - Future peeking strategy return: -0.2611
+2025-03-15 16:15:51,411 - backtester_validation - INFO - Running strategy consistency validation test
+2025-03-15 16:15:51,443 - backtester_validation - INFO - Returns: [-0.9405262866583505, -0.9405262866583505, -0.9405262866583505, -0.9405262866583505, -0.9405262866583505]
+2025-03-15 16:15:51,443 - backtester_validation - INFO - Return range: 0.00000000
+2025-03-15 16:15:51,443 - backtester_validation - INFO - Running buy and hold validation test
+2025-03-15 16:15:51,449 - backtester_validation - INFO - Expected return: -0.1150
+2025-03-15 16:15:51,449 - backtester_validation - INFO - Actual return: -0.1166
+2025-03-15 16:15:51,449 - backtester_validation - INFO - Return error: 0.0016
+2025-03-15 16:15:51,505 - backtester_validation - INFO - Running perfect foresight validation test
+2025-03-15 16:15:51,512 - backtester_validation - INFO - Perfect foresight return: 0.8772
+2025-03-15 16:15:51,512 - backtester_validation - INFO - Buy and hold return: -0.1152
+2025-03-15 16:15:51,566 - backtester_validation - INFO - Running buy and hold validation test
+2025-03-15 16:15:51,572 - backtester_validation - INFO - Expected return: 0.1047
+2025-03-15 16:15:51,572 - backtester_validation - INFO - Actual return: 0.1033
+2025-03-15 16:15:51,572 - backtester_validation - INFO - Return error: 0.0014
+2025-03-15 16:15:51,627 - backtester_validation - INFO - Running perfect foresight validation test
+2025-03-15 16:15:51,633 - backtester_validation - INFO - Perfect foresight return: 1.4579
+2025-03-15 16:15:51,634 - backtester_validation - INFO - Buy and hold return: 0.1049
+2025-03-15 16:15:51,689 - backtester_validation - INFO - Running buy and hold validation test
+2025-03-15 16:15:51,695 - backtester_validation - INFO - Expected return: 0.0021
+2025-03-15 16:15:51,695 - backtester_validation - INFO - Actual return: 0.0006
+2025-03-15 16:15:51,695 - backtester_validation - INFO - Return error: 0.0015
+2025-03-15 16:15:51,755 - backtester_validation - INFO - Running perfect foresight validation test
+2025-03-15 16:15:51,762 - backtester_validation - INFO - Perfect foresight return: 1.2341
+2025-03-15 16:15:51,762 - backtester_validation - INFO - Buy and hold return: 0.0021
+2025-03-15 16:15:51,816 - backtester_validation - INFO - Running edge case validation tests
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Validation complete: 13/13 tests passed
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Test: buy_and_hold, Passed: True
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Test: perfect_foresight, Passed: True
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Test: transaction_costs, Passed: True
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Test: slippage, Passed: True
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Test: look_ahead_bias, Passed: True
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Test: strategy_consistency, Passed: True
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Test: buy_and_hold, Passed: True
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Test: perfect_foresight, Passed: True
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Test: buy_and_hold, Passed: True
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Test: perfect_foresight, Passed: True
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Test: buy_and_hold, Passed: True
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Test: perfect_foresight, Passed: True
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Test: edge_cases, Passed: True
+2025-03-15 16:15:51,825 - backtester_validation - INFO - Validation report saved to validation_results/summary.txt

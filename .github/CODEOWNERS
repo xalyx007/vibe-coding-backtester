@@ -1,0 +1,24 @@
+# These owners will be the default owners for everything in the repo.
+# Unless a later match takes precedence, they will be requested for
+# review when someone opens a pull request.
+* @xalyx007
+
+# Order is important; the last matching pattern takes the most precedence.
+
+# Core components
+/backtester/backtester.py @xalyx007
+/backtester/data/ @xalyx007
+/backtester/strategy/ @xalyx007
+/backtester/portfolio/ @xalyx007
+
+# Utils
+/backtester/utils/ @xalyx007
+
+# Tests
+/tests/ @xalyx007
+
+# Documentation
+/docs/ @xalyx007
+
+# Examples
+/examples/ @xalyx007

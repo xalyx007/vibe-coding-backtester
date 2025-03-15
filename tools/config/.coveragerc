@@ -1,0 +1,3 @@
+[run]
+source = backtester
+omit = */tests/*, */docs/*, setup.py

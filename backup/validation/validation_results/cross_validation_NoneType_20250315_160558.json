@@ -1,0 +1,8 @@
+{
+    "average_return": 0.0,
+    "std_return": 0.0,
+    "max_return": 0.0,
+    "min_return": 0.0,
+    "sharpe_ratios": [],
+    "fold_results": []
+}

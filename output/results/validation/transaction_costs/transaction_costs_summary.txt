@@ -1,0 +1,9 @@
+Transaction Cost Accuracy Test Summary
+====================================
+
+Return with Transaction Costs: 0.0015
+Return without Transaction Costs: 0.0029
+Expected Direction (costs should reduce returns): Yes
+Actual Impact: -0.0015
+Impact Magnitude: 0.3735
+Test Passed: Yes

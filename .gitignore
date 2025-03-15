@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+
+# Unit test / coverage reports
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Sphinx documentation
+docs/_build/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# OS specific
+.DS_Store
+Thumbs.db
+# Output files
+output/logs/*.log
+output/results/**/*.json
+output/reports/
+# Build artifacts
+*.egg-info/
+# Python bytecode
+__pycache__/
+*.py[cod]

@@ -1,0 +1,45 @@
+Cross-Validation Summary
+=======================
+
+Number of folds: 5
+Average return: -0.7195
+Standard deviation: 0.2744
+Max return: -0.3565
+Min return: -0.9980
+
+Fold results:
+  Fold 1:
+    Period: 2020-01-01 to 2020-02-19
+    Return: -0.8336
+    Sharpe ratio: -1.0054
+    Max drawdown: -0.8336
+    Number of trades: 21
+
+  Fold 2:
+    Period: 2020-02-20 to 2020-04-09
+    Return: -0.9818
+    Sharpe ratio: -1.2586
+    Max drawdown: -0.8908
+    Number of trades: 42
+
+  Fold 3:
+    Period: 2020-04-10 to 2020-05-29
+    Return: -0.9980
+    Sharpe ratio: -1.2586
+    Max drawdown: -0.8908
+    Number of trades: 63
+
+  Fold 4:
+    Period: 2020-05-30 to 2020-07-18
+    Return: -0.3565
+    Sharpe ratio: -0.0006
+    Max drawdown: -0.6866
+    Number of trades: 84
+
+  Fold 5:
+    Period: 2020-07-19 to 2020-09-08
+    Return: -0.4277
+    Sharpe ratio: -0.3960
+    Max drawdown: -0.5699
+    Number of trades: 107
+

@@ -1,0 +1,9 @@
+Slippage Model Validation Summary
+================================
+
+Return with Slippage: 0.0016
+Return without Slippage: 0.0134
+Expected Direction (slippage should reduce returns): Yes
+Actual Impact: -0.0118
+Impact Magnitude: 0.8204
+Test Passed: Yes

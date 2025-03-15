@@ -1,0 +1,19 @@
+include LICENSE
+include README.md
+include CHANGELOG.md
+include CONTRIBUTING.md
+include requirements.txt
+include pyproject.toml
+include tox.ini
+include pytest.ini
+include Makefile
+
+recursive-include examples *.py *.yaml *.json
+recursive-include docs *.rst *.py *.bat Makefile
+recursive-include tests *.py
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[cod]
+recursive-exclude * *.so
+recursive-exclude * .DS_Store
+recursive-exclude * .git* 

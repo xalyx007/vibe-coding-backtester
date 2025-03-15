@@ -1,0 +1,7 @@
+Perfect Foresight Test Summary
+=============================
+
+Perfect Foresight Return: 0.1700
+Time-Lagged Return: 0.1565
+Return Difference: 0.0135
+Look-Ahead Bias Detected: No

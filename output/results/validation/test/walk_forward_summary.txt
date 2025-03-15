@@ -1,0 +1,91 @@
+Walk-Forward Optimization Summary
+================================
+
+Window size: 60 days
+Step size: 20 days
+Number of windows: 10
+Average return: 0.0000
+Best window return: 0.0000
+Worst window return: 0.0000
+
+Window results:
+  Window 1:
+    Training period: 2020-01-01 to 2020-02-29
+    Testing period: 2020-03-01 to 2020-03-20
+    Return: 0.0000
+    Sharpe ratio: 0.0000
+    Max drawdown: 0.0000
+    Number of trades: 0
+
+  Window 2:
+    Training period: 2020-01-21 to 2020-03-20
+    Testing period: 2020-03-21 to 2020-04-09
+    Return: 0.0000
+    Sharpe ratio: 0.0000
+    Max drawdown: 0.0000
+    Number of trades: 0
+
+  Window 3:
+    Training period: 2020-02-10 to 2020-04-09
+    Testing period: 2020-04-10 to 2020-04-29
+    Return: 0.0000
+    Sharpe ratio: 0.0000
+    Max drawdown: 0.0000
+    Number of trades: 0
+
+  Window 4:
+    Training period: 2020-03-01 to 2020-04-29
+    Testing period: 2020-04-30 to 2020-05-19
+    Return: 0.0000
+    Sharpe ratio: 0.0000
+    Max drawdown: 0.0000
+    Number of trades: 0
+
+  Window 5:
+    Training period: 2020-03-21 to 2020-05-19
+    Testing period: 2020-05-20 to 2020-06-08
+    Return: 0.0000
+    Sharpe ratio: 0.0000
+    Max drawdown: 0.0000
+    Number of trades: 0
+
+  Window 6:
+    Training period: 2020-04-10 to 2020-06-08
+    Testing period: 2020-06-09 to 2020-06-28
+    Return: 0.0000
+    Sharpe ratio: 0.0000
+    Max drawdown: 0.0000
+    Number of trades: 0
+
+  Window 7:
+    Training period: 2020-04-30 to 2020-06-28
+    Testing period: 2020-06-29 to 2020-07-18
+    Return: 0.0000
+    Sharpe ratio: 0.0000
+    Max drawdown: 0.0000
+    Number of trades: 0
+
+  Window 8:
+    Training period: 2020-05-20 to 2020-07-18
+    Testing period: 2020-07-19 to 2020-08-07
+    Return: 0.0000
+    Sharpe ratio: 0.0000
+    Max drawdown: 0.0000
+    Number of trades: 0
+
+  Window 9:
+    Training period: 2020-06-09 to 2020-08-07
+    Testing period: 2020-08-08 to 2020-08-27
+    Return: 0.0000
+    Sharpe ratio: 0.0000
+    Max drawdown: 0.0000
+    Number of trades: 0
+
+  Window 10:
+    Training period: 2020-06-29 to 2020-08-27
+    Testing period: 2020-08-28 to 2020-09-08
+    Return: 0.0000
+    Sharpe ratio: 0.0000
+    Max drawdown: 0.0000
+    Number of trades: 0
+

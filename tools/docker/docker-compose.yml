@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  backtester:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/app/data
+      - ./examples:/app/examples
+      - ./results:/app/results
+    command: run --config examples/config.yaml
+
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/app/data
+      - ./examples:/app/examples
+      - ./notebooks:/app/notebooks
+      - ./results:/app/results
+    command: bash -c "pip install jupyter && jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root" 

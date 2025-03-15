@@ -1,0 +1,16 @@
+2025-03-15 16:11:46,409 - validation_master - INFO - Starting comprehensive backtester validation
+2025-03-15 16:11:46,409 - validation_master - INFO - Running Basic validation tests...
+2025-03-15 16:11:46,425 - validation_master - ERROR - Basic validation tests failed with error code 2
+2025-03-15 16:11:46,425 - validation_master - ERROR - Error output: python: can't open file '/Users/app-development/backtester/tools/scripts/scripts/validate_backtester.py': [Errno 2] No such file or directory
+
+2025-03-15 16:11:46,425 - validation_master - INFO - Running Cross-validation with Backtrader...
+2025-03-15 16:11:46,441 - validation_master - ERROR - Cross-validation with Backtrader failed with error code 2
+2025-03-15 16:11:46,441 - validation_master - ERROR - Error output: python: can't open file '/Users/app-development/backtester/tools/scripts/scripts/cross_validate_with_backtrader.py': [Errno 2] No such file or directory
+
+2025-03-15 16:11:46,441 - validation_master - INFO - Running Monte Carlo validation...
+2025-03-15 16:11:46,460 - validation_master - ERROR - Monte Carlo validation failed with error code 2
+2025-03-15 16:11:46,460 - validation_master - ERROR - Error output: python: can't open file '/Users/app-development/backtester/tools/scripts/scripts/monte_carlo_validation.py': [Errno 2] No such file or directory
+
+2025-03-15 16:11:46,460 - validation_master - INFO - Generating comprehensive validation report
+2025-03-15 16:11:46,460 - validation_master - INFO - Comprehensive report generated at validation_master/comprehensive_report.md
+2025-03-15 16:11:46,460 - validation_master - WARNING - Some validation processes failed. See the report for details.

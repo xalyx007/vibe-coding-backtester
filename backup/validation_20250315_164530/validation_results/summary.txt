@@ -1,0 +1,68 @@
+Backtester Validation Summary
+==========================
+
+Tests passed: True/13
+
+Test: buy_and_hold, Passed: True
+  expected_return: 0.028427285256066127
+  actual_return: 0.026956012235310745
+  return_error: 0.0014712730207553822
+
+Test: perfect_foresight, Passed: True
+  actual_return: 1.241542563538033
+  buy_and_hold_return: 0.028469990241428267
+  outperformance: 1.2130725732966048
+
+Test: transaction_costs, Passed: True
+  return_with_costs: -0.9205102368423612
+  return_without_costs: 0.01342986331358964
+  return_difference: 0.9339401001559509
+  num_trades: 252
+
+Test: slippage, Passed: True
+  return_with_slippage: -0.9442718830491948
+  return_without_slippage: -0.9403220632609206
+  return_difference: 0.003949819788274245
+
+Test: look_ahead_bias, Passed: True
+  return_normal: -0.9405262866583505
+  return_future: -0.26112019249470886
+  return_ratio: 0.27763199838088276
+
+Test: strategy_consistency, Passed: True
+  returns: [-0.9405262866583505, -0.9405262866583505, -0.9405262866583505, -0.9405262866583505, -0.9405262866583505]
+  return_range: 0.0
+
+Test: buy_and_hold, Passed: True
+  expected_return: -0.1149873356788446
+  actual_return: -0.11660227465520578
+  return_error: 0.0016149389763611827
+
+Test: perfect_foresight, Passed: True
+  actual_return: 0.8772168988614322
+  buy_and_hold_return: -0.1151600757925334
+  outperformance: 0.9923769746539656
+
+Test: buy_and_hold, Passed: True
+  expected_return: 0.10473221390777414
+  actual_return: 0.10333737954034916
+  return_error: 0.001394834367424977
+
+Test: perfect_foresight, Passed: True
+  actual_return: 1.4578977268528708
+  buy_and_hold_return: 0.10488954823011931
+  outperformance: 1.3530081786227515
+
+Test: buy_and_hold, Passed: True
+  expected_return: 0.0020534128090179517
+  actual_return: 0.0005557196955032762
+  return_error: 0.0014976931135146756
+
+Test: perfect_foresight, Passed: True
+  actual_return: 1.2340633136011312
+  buy_and_hold_return: 0.002056497555350978
+  outperformance: 1.2320068160457802
+
+Test: edge_cases, Passed: True
+  results: [{'case': 'empty_data', 'passed': True}, {'case': 'single_data_point', 'passed': True}, {'case': 'zero_prices', 'passed': True}, {'case': 'missing_data', 'passed': True}]
+

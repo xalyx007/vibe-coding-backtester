@@ -1,0 +1,32 @@
+Strategy Comparison Summary
+===========================
+
+Best Strategy: Moving Average Crossover
+Worst Strategy: Buy and Hold
+
+Strategy Results:
+- Moving Average Crossover:
+  - Return: 0.0275
+  - Sharpe Ratio: 0.0001
+  - Max Drawdown: -0.9963
+  - Win Rate: 0.0000
+- RSI Strategy:
+  - Return: -0.3099
+  - Sharpe Ratio: -0.1208
+  - Max Drawdown: -0.7179
+  - Win Rate: 0.0000
+- Bollinger Bands:
+  - Return: -0.3843
+  - Sharpe Ratio: -0.4659
+  - Max Drawdown: -0.4098
+  - Win Rate: 0.0000
+- Buy and Hold:
+  - Return: -0.4459
+  - Sharpe Ratio: 0.0000
+  - Max Drawdown: 0.0000
+  - Win Rate: 0.0000
+- Random Strategy:
+  - Return: -0.2025
+  - Sharpe Ratio: -0.2621
+  - Max Drawdown: -0.3442
+  - Win Rate: 0.0000

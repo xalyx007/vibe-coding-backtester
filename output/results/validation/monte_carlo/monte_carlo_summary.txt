@@ -1,0 +1,20 @@
+Monte Carlo Simulation Summary
+==============================
+
+Number of simulations: 100
+Average return: -0.8225
+Value at Risk (95%): -0.9966
+Value at Risk (99%): -0.9976
+Max return: 0.0216
+Min return: -0.9976
+
+Distribution of returns:
+  -0.9976 to -0.8844: 63
+  -0.8844 to -0.7712: 8
+  -0.7712 to -0.6579: 12
+  -0.6579 to -0.5447: 4
+  -0.5447 to -0.4314: 3
+  -0.4314 to -0.3182: 3
+  -0.3182 to -0.2049: 2
+  -0.2049 to -0.0917: 2
+  -0.0917 to 0.0216: 3

@@ -1,0 +1,62 @@
+Parameter Sensitivity Summary
+============================
+
+Strategy: Moving Average Crossover
+
+Best Parameters:
+- Short Window: 5
+- Long Window: 40
+
+Parameter Sensitivity:
+- Short Window: High (std dev: 0.1087)
+- Long Window: Medium (std dev: 0.0436)
+
+Parameter Results:
+- Short Window: 5, Long Window: 30
+  - Return: -0.1994
+  - Sharpe Ratio: -0.0010
+- Short Window: 5, Long Window: 40
+  - Return: -0.0566
+  - Sharpe Ratio: -0.0003
+- Short Window: 5, Long Window: 50
+  - Return: -0.0843
+  - Sharpe Ratio: -0.0004
+- Short Window: 5, Long Window: 60
+  - Return: -0.1114
+  - Sharpe Ratio: -0.0002
+- Short Window: 10, Long Window: 30
+  - Return: -0.1147
+  - Sharpe Ratio: -0.0006
+- Short Window: 10, Long Window: 40
+  - Return: -0.1425
+  - Sharpe Ratio: -0.0007
+- Short Window: 10, Long Window: 50
+  - Return: -0.1925
+  - Sharpe Ratio: -0.0003
+- Short Window: 10, Long Window: 60
+  - Return: -0.2275
+  - Sharpe Ratio: -0.0004
+- Short Window: 15, Long Window: 30
+  - Return: -0.2241
+  - Sharpe Ratio: -0.0010
+- Short Window: 15, Long Window: 40
+  - Return: -0.2322
+  - Sharpe Ratio: -0.0010
+- Short Window: 15, Long Window: 50
+  - Return: -0.2769
+  - Sharpe Ratio: -0.0007
+- Short Window: 15, Long Window: 60
+  - Return: -0.2959
+  - Sharpe Ratio: -0.0004
+- Short Window: 20, Long Window: 30
+  - Return: -0.3037
+  - Sharpe Ratio: -0.0012
+- Short Window: 20, Long Window: 40
+  - Return: -0.3499
+  - Sharpe Ratio: -0.0012
+- Short Window: 20, Long Window: 50
+  - Return: -0.4010
+  - Sharpe Ratio: -0.0014
+- Short Window: 20, Long Window: 60
+  - Return: -0.4224
+  - Sharpe Ratio: -0.0006

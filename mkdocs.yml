@@ -1,0 +1,94 @@
+site_name: Modular Backtesting System
+site_description: A flexible and modular backtesting system for trading strategies
+site_author: Backtester Team
+site_url: https://github.com/yourusername/backtester
+
+repo_name: yourusername/backtester
+repo_url: https://github.com/yourusername/backtester
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - attr_list
+  - def_list
+  - tables
+  - abbr
+  - md_in_html
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [backtester]
+          options:
+            show_source: true
+            show_root_heading: true
+            heading_level: 3
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: installation.md
+    - Quick Start: quickstart.md
+  - User Guide:
+    - Architecture: architecture.md
+    - Configuration: configuration.md
+    - Data Sources: data_sources.md
+    - Strategies: strategies.md
+    - Portfolio Management: portfolio_management.md
+    - Backtesting: backtesting.md
+    - Analysis: analysis.md
+  - API Reference:
+    - Data Module: api/data.md
+    - Strategy Module: api/strategy.md
+    - Portfolio Module: api/portfolio.md
+    - Event System: api/events.md
+    - Backtesting Module: api/backtesting.md
+    - Analysis Module: api/analysis.md
+  - Examples:
+    - Basic Backtest: examples/basic.md
+    - Strategy Ensemble: examples/ensemble.md
+    - Configuration-Based: examples/config.md
+  - Development:
+    - Contributing: contributing.md
+    - Code of Conduct: code_of_conduct.md
+    - Project Structure: project_structure.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/backtester
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/backtester/
+
+extra_css:
+  - css/extra.css 
