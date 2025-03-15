@@ -40,3 +40,8 @@ output/reports/
 # Python bytecode
 __pycache__/
 *.py[cod]
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+notebooks/basic_backtest_fixed.ipynb
