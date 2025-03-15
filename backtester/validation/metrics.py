@@ -60,7 +60,7 @@ def calculate_max_drawdown(prices: pd.Series) -> float:
     drawdown = (prices - running_max) / running_max
     
     # Return the maximum drawdown as a positive percentage
-    return abs(drawdown.min())  # Using abs to ensure positive value
+    return -1.0 * drawdown.min()  # Breaking change: using -1.0 instead of abs
 
 def calculate_win_rate(trades: List[Dict[str, Any]]) -> float:
     """
